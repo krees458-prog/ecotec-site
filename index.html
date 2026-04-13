@@ -15,7 +15,13 @@
       background: linear-gradient(135deg, #0f172a, #1e293b);
       color: white;
       text-align: center;
-      padding: 80px 20px;
+      padding: 60px 20px;
+    }
+    /* Logo styling */
+    .logo {
+      max-width: 250px;
+      height: auto;
+      margin-bottom: 15px;
     }
     header h1 {
       font-size: 2.5em;
@@ -23,6 +29,7 @@
     }
     header p {
       opacity: 0.9;
+      font-size: 1.2em;
     }
     .btn {
       margin-top: 20px;
@@ -49,11 +56,17 @@
       border-radius: 10px;
       background: #f8fafc;
       box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      border-top: 4px solid #22c55e;
+    }
+    #contact {
+      background: #f8fafc;
+      text-align: center;
     }
     footer {
       text-align: center;
       padding: 30px;
-      background: #f1f5f9;
+      background: #1e293b;
+      color: white;
       font-size: 0.9em;
     }
     @media(max-width: 700px) {
@@ -66,7 +79,8 @@
 <body>
 
 <header>
-  <h1>EcoTec</h1>
+  <!-- This line adds your logo -->
+  <img src="logo.jpg" alt="EcoTec Logo" class="logo">
   <p>EPC Assessments & IT Networking Solutions</p>
   <a href="#contact" class="btn">Get a Quote</a>
 </header>
@@ -104,9 +118,9 @@
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
-  <p><strong>Phone:</strong> Your Number</p>
-  <p><strong>Email:</strong> your@email.com</p>
+  <h2>Contact Our Team</h2>
+  <p><strong>Phone:</strong> [Enter Your Number]</p>
+  <p><strong>Email:</strong> [Enter Your Email]</p>
   <p><strong>Location:</strong> London & Surrounding Areas</p>
 </section>
 
