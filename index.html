@@ -7,44 +7,58 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      color: #222;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
       line-height: 1.6;
+      background-color: #fff;
+    }
+    /* Green accent bar at the very top */
+    .top-bar {
+      background: #22c55e;
+      height: 8px;
+      width: 100%;
     }
     header {
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: white;
+      background: #ffffff;
+      color: #333;
       text-align: center;
-      padding: 60px 20px;
+      padding: 40px 20px;
+      border-bottom: 1px solid #eee;
     }
-    /* Logo styling */
     .logo {
       max-width: 250px;
       height: auto;
       margin-bottom: 15px;
     }
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
     header p {
-      opacity: 0.9;
-      font-size: 1.2em;
+      font-size: 1.3em;
+      color: #666;
+      margin-top: 0;
     }
     .btn {
-      margin-top: 20px;
+      margin-top: 15px;
       display: inline-block;
       background: #22c55e;
       color: white;
-      padding: 12px 25px;
+      padding: 14px 30px;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 50px;
       font-weight: bold;
+      box-shadow: 0 4px 10px rgba(34, 197, 94, 0.2);
+      transition: transform 0.2s;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      background: #16a34a;
     }
     section {
       max-width: 1000px;
       margin: auto;
       padding: 60px 20px;
+    }
+    h2 {
+      color: #111;
+      font-size: 1.8em;
     }
     .services {
       display: grid;
@@ -52,24 +66,32 @@
       gap: 30px;
     }
     .card {
-      padding: 25px;
-      border-radius: 10px;
-      background: #f8fafc;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      border-top: 4px solid #22c55e;
+      padding: 30px;
+      border-radius: 12px;
+      background: #fdfdfd;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      border: 1px solid #eee;
+      border-top: 5px solid #22c55e;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #111;
     }
     #contact {
-      background: #f8fafc;
+      background: #f9f9f9;
       text-align: center;
+      border-radius: 20px;
+      padding: 40px 20px;
     }
     footer {
       text-align: center;
       padding: 30px;
-      background: #1e293b;
-      color: white;
+      background: #f4f4f4;
+      color: #666;
       font-size: 0.9em;
+      border-top: 1px solid #eee;
     }
-    @media(max-width: 700px) {
+    @media(max-width: 768px) {
       .services {
         grid-template-columns: 1fr;
       }
@@ -78,19 +100,21 @@
 </head>
 <body>
 
+<div class="top-bar"></div>
+
 <header>
-  <!-- This line adds your logo -->
   <img src="logo.jpg" alt="EcoTec Logo" class="logo">
-  <p>EPC Assessments & IT Networking Solutions</p>
+  <p>Domestic EPCs • Floorplans • IT Networking</p>
   <a href="#contact" class="btn">Get a Quote</a>
 </header>
 
 <section>
   <h2>About Us</h2>
   <p>
-EcoTec offers professional Domestic EPC assessments and accurate floorplans with a 24-hour turnaround, providing same-day or next-day assessments subject to availability. 
-
-Beyond compliance, we optimize your digital space with expert IT networking services tailored for a fast, reliable, and secure infrastructure.
+    EcoTec offers professional <strong>Domestic EPC assessments</strong> and accurate <strong>floorplans</strong> with a 24-hour turnaround, providing same-day or next-day assessments subject to availability. 
+  </p>
+  <p>
+    Beyond compliance, we optimize your digital space with <strong>expert IT networking services</strong>—from design to deployment—tailored for a fast, reliable, and secure infrastructure.
   </p>
 </section>
 
@@ -99,7 +123,7 @@ Beyond compliance, we optimize your digital space with expert IT networking serv
   <div class="services">
     
     <div class="card">
-      <h3>EPC Assessments</h3>
+      <h3>EPC & Floorplans</h3>
       <p>
         Fast, compliant Energy Performance Certificates (EPCs) and professional floorplans for residential properties. 
         Ideal for sales, rentals, and energy improvements. 
@@ -109,9 +133,7 @@ Beyond compliance, we optimize your digital space with expert IT networking serv
     <div class="card">
       <h3>IT Networking</h3>
       <p>
-        We provide comprehensive network services designed to ensure your business or home stays securely connected, fast, and reliable. 
-        Our expert team handles full-service network setup, custom firewall configuration to protect against cyber threats, and optimized, high-performance WiFi installation to eliminate dead zones. 
-        From designing infrastructure to implementing robust security protocols, we deliver tailor-made solutions that keep your data safe and your workflow uninterrupted.
+        Comprehensive network services designed to ensure your business or home stays securely connected. Our expert team handles full-service network setup, custom firewall configuration to protect against cyber threats, and high-performance WiFi installation to eliminate dead zones.
       </p>
     </div>
 
@@ -120,8 +142,8 @@ Beyond compliance, we optimize your digital space with expert IT networking serv
 
 <section id="contact">
   <h2>Contact Our Team</h2>
-  <p><strong>Phone:</strong> 07812574102 </p>  
-  <p><strong>Email:</strong>  krees458+ecotec@gmail.co.uk  </p>
+  <p><strong>Phone:</strong> 07812 574102</p>  
+  <p><strong>Email:</strong> krees458+ecotec@gmail.co.uk</p>
   <p><strong>Location:</strong> Caerphilly & Surrounding Areas</p>
 </section>
 
